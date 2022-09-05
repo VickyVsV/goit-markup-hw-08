@@ -1,0 +1,39 @@
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* .link:active {
+  color: var(--main-hover-color);
+} */
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  border: transparent;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid red; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
