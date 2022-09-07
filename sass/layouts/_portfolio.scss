@@ -22,22 +22,44 @@
 }
 
 .portfolio__button {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 15px 8px;
+
+  @include tablet {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+  }
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
+  gap: 30px;
 }
 
 .card__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   /* position: relative; */
+
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .card-info {
@@ -96,10 +118,18 @@
   height: 100%;
   transform: translateY(101%);
   transition: transform var(--duration) var(--timing-function-cubic);
-  padding: 63px 24px;
+  padding: 77px 24px;
   overflow: auto;
 
   .card__link:hover & {
     transform: translateY(0);
+  }
+
+  @include tablet {
+    padding: 63px 24px;
+  }
+
+  @include desktop {
+    padding: 63px 24px;
   }
 }
