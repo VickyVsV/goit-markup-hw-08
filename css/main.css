@@ -70,17 +70,38 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%; /* 1200px */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px; /* 94px */
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -403,22 +424,35 @@ img {
   background-size: cover;
   max-width: 1600px;
   margin: auto auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px; /* 44px */
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 696px;
+  max-width: 360px; /* 696px */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px; /* 44px */
+    line-height: 1.3636363636;
+  }
 }
 
 .hero__btn {
@@ -442,31 +476,43 @@ img {
 }
 
 .quality {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .quality__item {
   align-items: baseline;
-  margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+  /* margin-right: 30px; */
+  /* flex-basis: calc((100% - 90px) / 4); */
 }
-.quality__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .quality__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quality__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .quality__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 100%;
+  max-width: 450px; /* width: 270px; */
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
 
 .quality__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -572,30 +618,67 @@ img {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  /*   @media screen and (min-width: 768px) {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    } */
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.clients__item {
+  align-items: baseline;
+  width: 100%;
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 100%;
+  max-width: 210px;
   height: 92px;
   color: var(--main-svg-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color var(--duration) var(--timing-function-cubic), color var(--duration) var(--timing-function-cubic);
+  /* @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+      width: 170px;
+  height: 92px;
+  } */
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--main-hover-color);

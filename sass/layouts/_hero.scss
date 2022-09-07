@@ -7,22 +7,33 @@
   background-size: cover;
   max-width: 1600px;
   margin: auto auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom:200px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px; /* 44px */
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 696px;
+  max-width: 360px; /* 696px */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px; /* 44px */
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__btn {
