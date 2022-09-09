@@ -511,7 +511,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header-navigation {
-    margin: 0;
+    margin: 0px;
     /* margin-left: 15px; */
   }
 }
@@ -559,6 +559,8 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -566,6 +568,7 @@ img {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    padding: 0;
   }
 }
 
