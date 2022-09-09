@@ -8,15 +8,31 @@
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    justify-content: none;
+  }
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 15px;
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .header-nav {
-  display: flex;
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .header-nav__item {
@@ -47,9 +63,13 @@
 }
 
 .header-contacts {
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+
+  @include desktop {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .header-contacts__item {

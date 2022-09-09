@@ -1,6 +1,7 @@
-@import './utils/mixins';
 @import './utils/vars';
+@import './utils/mixins';
 @import './utils/hidden';
+@import './layouts/menu';
 
 @import './base/reset';
 @import './base/common';
@@ -8,6 +9,7 @@
 @import './components/logo';
 @import './components/soc';
 @import './components/registration';
+
 
 @import './layouts/header';
 @import './layouts/hero';
