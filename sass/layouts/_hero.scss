@@ -11,7 +11,7 @@
   padding-bottom: 118px;
   @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("images/img-hero-bg-mob-2x.jpg");
+      url("images/img-hero-bg-mob@2x.jpg");
   }
 
   @include tablet {
@@ -19,7 +19,7 @@
       url("images/img-hero-bg-tab.jpg");
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/img-hero-bg-tab-2x.jpg");
+        url("../images/img-hero-bg-tab@2x.jpg");
     }
   }
 
@@ -28,7 +28,7 @@
       url("../images/img-hero-bg.jpg");
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/img-hero-bg-2x.jpg");
+        url("../images/img-hero-bg@2x.jpg");
     }
     padding-top: 200px;
     padding-bottom: 200px;
