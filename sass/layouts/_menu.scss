@@ -10,6 +10,7 @@
   padding-top: 10px;
   padding-bottom: 48px;
 
+
 }
 
 .mob-menu-container {
@@ -18,10 +19,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  transform: translate-z(-50%, -50%) scale(1);
+  transition: transform var(--duration) var(--timing-function-cubic);
+
   .mob-menu.is-hidden & {
     /* закрытое окно модалки */
-    transform: translate(-50%, -50%) scale(0); /* плавное появление модалки */
+    transform: translate-z(-50%, -50%) scale(0); /* плавное появление модалки */
   }
 }
 
