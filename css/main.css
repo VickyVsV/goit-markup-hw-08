@@ -952,7 +952,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 210px;
+  /* max-width: 210px; */
   height: 92px;
   color: var(--main-svg-color);
   border: 1px solid #afb1b8;
